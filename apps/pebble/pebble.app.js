@@ -125,7 +125,7 @@ let loadThemeColors = function() {
 };
 
 let drawLock = function(){
-  if (settings.showlock) {
+  if (settings.showlock && false) { // bugged. hc disable
     if (Bangle.isLocked()){
       g.setColor(theme.day);
       g.setBgColor(settings.bg);
